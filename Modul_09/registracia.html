@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" translate="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Registration</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container-authorization">
+            <section class="authorization">
+            <div class="registration-img">
+            </div>
+          <div class="authorization__content">
+            <div class="registracia__close">
+                <a class="link link__registration" href="index.html">X</a>
+            </div>
+                <h1>Регистрация</h1>
+
+                <form action="php/registration.php" method="post">
+                    <input class="authorization__input"  type="text" name="familia" id="familia" placeholder="Фамилия" pattern="^\[a-zA-Z]" required>  
+                    <input class="authorization__input"  type="text" name="ima" id="ima" placeholder="Имя" pattern="^\[a-zA-Z]" required> 
+                    <input class="authorization__input"  type="text" name="otchestvo" id="otchestvo" placeholder="Отчество" pattern="^\[a-zA-Z]">   
+                    <input class="authorization__input" type="telefon" name="telefon" placeholder="+79000000000" pattern="^\+7[0-9]{10}$" required>          
+                    <input class="authorization__input" type="email" name="email" id="email" placeholder="Email" required>
+                    <input class="authorization__input"  name="login" id="login" placeholder="Логин" required>
+                    <input class="authorization__input"  type="password" name="password" id="password" placeholder="Пароль" required>
+                    <button class="registration__button" type="submit">Зарегистрироваться</button>
+                </form>
+
+            </div>
+            </section>
+        </div>
+    </div>
+</body>
+</html>
