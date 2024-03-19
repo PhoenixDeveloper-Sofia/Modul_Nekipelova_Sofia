@@ -1,0 +1,26 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color: black;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+}
+html{
+    background: rgba(0, 0, 0, 0.100);
+    overflow-x: hidden;
+}
+button,input{
+    outline: none;
+    border: none;
+    background: none;
+}
+a, a:link, a:visited  {
+    text-decoration: none;
+    cursor: pointer;
+}
+img, svg {
+	max-width: 100%;
+	height: auto;
+}
